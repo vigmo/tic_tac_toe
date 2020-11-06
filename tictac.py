@@ -1,6 +1,10 @@
+#Function for printing the Tic Tac Board
+from IPython.display import clear_output
 
-print ("Hello World!")
-a = 10
-b = 20
-print(f'Two new numbes were added to this code and their sum is printed as {a+b}')
-c = a*b
+def display_board(board):
+    clear_output()
+    print(' '+ board[7]+ ' | ' +board[8]+ ' | ' +board[9])
+    print('-----------')
+    print(' '+ board[4]+ ' | ' +board[5]+ ' | ' +board[6])
+    print('-----------')
+    print(' '+ board[1]+ ' | ' +board[2]+ ' | ' +board[3])
