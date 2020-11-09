@@ -1,7 +1,6 @@
 #Function for printing the Tic Tac Board
 from IPython.display import clear_output
 
-<<<<<<< HEAD
 def display_board(board):
     clear_output()
     print(' '+ board[7]+ ' | ' +board[8]+ ' | ' +board[9])
@@ -9,7 +8,6 @@ def display_board(board):
     print(' '+ board[4]+ ' | ' +board[5]+ ' | ' +board[6])
     print('-----------')
     print(' '+ board[1]+ ' | ' +board[2]+ ' | ' +board[3])
-=======
 def player_input(): 
     mark = '' 
     while not (mark == 'X' or mark == 'O'): 
@@ -20,4 +18,3 @@ def player_input():
         return ('O', 'X') 
 
  
->>>>>>> player_input
