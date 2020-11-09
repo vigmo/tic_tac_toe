@@ -1,6 +1,11 @@
 
-print ("Hello World!")
-a = 10
-b = 20
-print(f'Two new numbes were added to this code and their sum is printed as {a+b}')
-c = a*b
+def player_input(): 
+    mark = '' 
+    while not (mark == 'X' or mark == 'O'): 
+        mark = input("Player 1: Do you want to be X or O? ").upper()   
+    if mark == 'X': 
+        return ('X', 'O') 
+    else: 
+        return ('O', 'X') 
+
+ 
