@@ -19,4 +19,15 @@ def player_input():
     else: 
         return ('O', 'X') 
 
+def place_marker(board, marker, position): 
+
+    #test_board = ['#','X','O','X','O','X','O','X','O','X'] given in the beginning of this exercise 
+
+    #append board list with the latest X or O value 
+
+    board[position] = marker 
+
+    return board 
+
+    #pass 
  
