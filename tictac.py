@@ -19,8 +19,6 @@ def player_input():
     else: 
         return ('O', 'X') 
 
-<<<<<<< HEAD
-
 def win_check(board, mark):
     check_result = False
     if mark == board[1] == board[2] == board[3]:
@@ -42,7 +40,6 @@ def win_check(board, mark):
         
     return check_result
 
-=======
 def place_marker(board, marker, position): 
 
     #test_board = ['#','X','O','X','O','X','O','X','O','X'] given in the beginning of this exercise 
@@ -54,5 +51,4 @@ def place_marker(board, marker, position):
     return board 
 
     #pass 
->>>>>>> 7a0b8c6859b5f47d23beebec7d7cda4f264e117e
- 
+
