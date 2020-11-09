@@ -19,4 +19,26 @@ def player_input():
     else: 
         return ('O', 'X') 
 
+
+def win_check(board, mark):
+    check_result = False
+    if mark == board[1] == board[2] == board[3]:
+        check_result = True
+    elif mark == board[4] == board[5] == board[6]:
+        check_result = True
+    elif mark == board[7] == board[8] == board[9]:
+        check_result = True
+    elif mark == board[1] == board[4] == board[7]:
+        check_result = True
+    elif mark == board[2] == board[5] == board[8]:
+        check_result = True
+    elif mark == board[3] == board[6] == board[9]:
+        check_result = True    
+    elif mark == board[1] == board[5] == board[9]:
+        check_result = True
+    elif mark == board[3] == board[5] == board[7]:
+        check_result = True
+        
+    return check_result
+
  
