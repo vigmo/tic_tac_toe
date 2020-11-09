@@ -2,7 +2,7 @@
 from IPython.display import clear_output
 
 def display_board(board):
-    clear_output()
+    print('\n'*100)
     print(' '+ board[7]+ ' | ' +board[8]+ ' | ' +board[9])
     print('-----------')
     print(' '+ board[4]+ ' | ' +board[5]+ ' | ' +board[6])
@@ -68,12 +68,24 @@ def full_board_check(board):
 def space_check(board, position): 
 
     if board[position] == ' ': 
-
         return True 
-
     else: 
-
         return False 
+        
+def player_choice(board): 
+    ref = False 
+    while ref == False: 
+        pos = int(input("Choose your cell (between 1-9): ")) 
+        if pos<1 and pos>9: 
+            print('Number out of range') 
+            continue 
+        if space_check(board, pos): 
+            ref = True 
+            return pos 
+        else: 
+            print('The cell is already filled! Choose another one')
+
+        #return False 
 # Function to replay the game
 def replay():
     reply = input("Do you want to play again? (Y or N): ").upper()
@@ -129,3 +141,4 @@ while True:
            
     if not replay():
         break
+
