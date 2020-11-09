@@ -19,6 +19,7 @@ def player_input():
     else: 
         return ('O', 'X') 
 
+<<<<<<< HEAD
 
 def win_check(board, mark):
     check_result = False
@@ -41,4 +42,17 @@ def win_check(board, mark):
         
     return check_result
 
+=======
+def place_marker(board, marker, position): 
+
+    #test_board = ['#','X','O','X','O','X','O','X','O','X'] given in the beginning of this exercise 
+
+    #append board list with the latest X or O value 
+
+    board[position] = marker 
+
+    return board 
+
+    #pass 
+>>>>>>> 7a0b8c6859b5f47d23beebec7d7cda4f264e117e
  
