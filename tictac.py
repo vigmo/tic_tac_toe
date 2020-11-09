@@ -64,3 +64,13 @@ def full_board_check(board):
         return True
     else:
         return False
+# Function to check if is any space in board
+def space_check(board, position): 
+
+    if board[position] == ' ': 
+
+        return True 
+
+    else: 
+
+        return False 
