@@ -9,7 +9,7 @@ def display_board(board):
     print('-----------')
     print(' '+ board[1]+ ' | ' +board[2]+ ' | ' +board[3])
 
-
+# Function to get a Player Input as X or O
 def player_input(): 
     mark = '' 
     while not (mark == 'X' or mark == 'O'): 
@@ -19,6 +19,7 @@ def player_input():
     else: 
         return ('O', 'X') 
 
+# Function to check if a given mark X or O has won
 def win_check(board, mark):
     check_result = False
     if mark == board[1] == board[2] == board[3]:
@@ -40,15 +41,16 @@ def win_check(board, mark):
         
     return check_result
 
+# Function to assign a Marker X or O in the given board position
 def place_marker(board, marker, position): 
-
-    #test_board = ['#','X','O','X','O','X','O','X','O','X'] given in the beginning of this exercise 
-
-    #append board list with the latest X or O value 
-
     board[position] = marker 
-
     return board 
-
-    #pass 
+   
+# Function to choose who plays first
+import random
+def choose_first():
+    if random.randint(1,2) == 1:
+        return 'Player 1'
+    else:
+        return 'Player 2'
 
