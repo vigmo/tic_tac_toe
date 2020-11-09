@@ -54,3 +54,13 @@ def choose_first():
     else:
         return 'Player 2'
 
+# Function to check if board is full or not
+def full_board_check(board):
+    count = 0
+    for i in range (1,10):
+        if board[i] == ' ':
+            count += 1   
+    if count == 0:
+        return True
+    else:
+        return False
