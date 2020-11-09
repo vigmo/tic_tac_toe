@@ -71,18 +71,6 @@ def space_check(board, position):
         return True 
     else: 
         return False 
-        def player_choice(board): 
-    ref = False 
-    while ref == False: 
-        pos = int(input("Choose your cell (between 1-9): ")) 
-        if pos<1 and pos>9: 
-            print('Number out of range') 
-            continue   
-        if space_check(board, pos): 
-            ref = True 
-            return pos 
-        else: 
-            print('The cell is already filled! Choose another one') 
 
 # Function to make a player choice on board
 def player_choice(board): 
