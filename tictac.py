@@ -141,10 +141,7 @@ while True:
            
     if not replay():
         break
-<<<<<<< HEAD
 
     #Vignesh adding a comment for his branch vigmo_test
 
-=======
 print ("Hello")
->>>>>>> test_demo
